@@ -36,6 +36,23 @@ To use these scripts:
 
 Run `bdr_data_downloader.py` first. This might take a while. Once all data is downloaded, run `bdr_terrain_analyzer.py` to process the data and get results.
 
+## 🚨 Things to Keep in Mind
+
+While we've done our best, there are a few things you should know:
+
+### 📏 Resolution Limitations
+- Our data has a resolution of about 30m per pixel. We missed some finer details of the terrain.
+
+### 🗺️ Averaging Over Large Areas
+- We're giving you average values for some pretty big stretches of land.
+- Don't be surprised if you hit patches that are way steeper or flatter than the average we've shown.
+
+### 📅 Data Freshness
+- We're using elevation data from the SRTM (Shuttle Radar Topography Mission). This data isn't updated frequently, so any recent changes to the landscape won't be reflected.
+
+### 🧭 Limited Factors
+- Our analysis focuses mainly on slope and ruggedness. There are lots of other factors that make a route challenging or easy - like surface type, weather conditions, or obstacles that don't show up in elevation data.
+
 ## What We Found Out
 
 Here's a summary:
