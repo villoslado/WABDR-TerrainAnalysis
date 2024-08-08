@@ -34,4 +34,4 @@ This project is all about combining my love for off-roading with some data fun. 
 
 To use these scripts:
 
-Run `wabdr_data_downloader.py` first. This might take a while. Once all data is downloaded, run `wabdr_terrain_analyzer.py` to process the data and get results.
+Run `bdr_data_downloader.py` first. This might take a while. Once all data is downloaded, run `bdr_terrain_analyzer.py` to process the data and get results.
