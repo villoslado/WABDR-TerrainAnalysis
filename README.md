@@ -35,3 +35,37 @@ This project is all about combining my love for off-roading with some data fun. 
 To use these scripts:
 
 Run `bdr_data_downloader.py` first. This might take a while. Once all data is downloaded, run `bdr_terrain_analyzer.py` to process the data and get results.
+
+## What We Found Out
+
+Here's a summary:
+
+### The Lay of the Land
+
+We sliced the WABDR into six sections and took a look at each one. Here's what we discovered:
+
+- **Steepness**: On average, we're looking at slopes between 9° and 15°.
+- **Tough Stuff**: The stretch from Cashmere to Chelan is the beast, with an average slope of about 15° and highest ruggedness score.
+- **Easier Riding**: If you're easing into it, the northern bit from Conconully to Canada is your friend. It's the gentlest, with slopes averaging around 9°.
+
+### Factoids
+
+- The route generally gets a bit easier as you head north.
+- We found some spots with veeery steep slopes. There's plenty of flat ground too, perfect for catching your breath.
+
+### What It All Means
+
+Whether you're a veteran or a newbie like me to the backcountry scene, the WABDR's got something for everyone. It's a rollercoaster of terrain that'll keep you on your wheels the whole way through.
+
+The WABDR in a nutshell.
+
+## WABDR Terrain Summary
+
+| Section | Avg. Slope | Ruggedness | Difficulty |
+|---------|:----------:|:----------:|:----------:|
+| Oregon Border to Packwood | 13.96° | 6.3990 | 🏔️🏔️🏔️ |
+| Packwood to Ellensburg | 13.75° | 6.8401 | 🏔️🏔️🏔️ |
+| Ellensburg to Cashmere | 11.01° | 4.9460 | 🏔️🏔️ |
+| Cashmere to Chelan | 14.73° | 7.3343 | 🏔️🏔️🏔️🏔️ |
+| Chelan to Conconully | 10.68° | 5.0800 | 🏔️🏔️ |
+| Conconully to Canada | 9.62° | 4.7239 | 🏔️ |
