@@ -1,0 +1,7 @@
+black
+earthengine-api
+geemap
+numpy
+rasterio
+scipy
+shapely
