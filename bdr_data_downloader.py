@@ -1,5 +1,6 @@
 import ee
 import time
+import google.auth
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
@@ -8,7 +9,20 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 import io
 import os
 
-ee.Initialize()
+
+print("Attempting to get default credentials...")
+try:
+    credentials, project_id = google.auth.default()
+    print(f"Default credentials obtained. Project ID: {project_id}")
+except Exception as e:
+    print(f"Error getting default credentials: {e}")
+
+print("Attempting to initialize Earth Engine...")
+try:
+    ee.Initialize(project="wabrdanalyzer")
+    print("Earth Engine initialized successfully.")
+except Exception as e:
+    print(f"Error initializing Earth Engine: {e}")
 
 wabdr_sections = {
     "Oregon_Border_to_Packwood": [-122.0, 45.6, -121.5, 46.6],
@@ -31,7 +45,8 @@ def authenticate_gdrive():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                "credentials.json", ["https://www.googleapis.com/auth/drive.readonly"]
+                "credentials.json",
+                ["https://www.googleapis.com/auth/drive.readonly"],
             )
             creds = flow.run_local_server(port=0)
         with open("token.json", "w") as token:
